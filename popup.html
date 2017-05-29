@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body{
+	 background-color: #FDEDEC ;
+}
+#copy_btn {
+    width: 5em;  height: 1.5em;
+     background-color: #0000A0;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+
+}
+#copy_btn:hover {background-color: #ADD8E6}
+
+#copy_btn:active {
+  background-color: #ADD8E6;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+</style>
 </head>
 <body>
-
-OK!! Your URL has been shortened.
-
-
+<p id = display style="color:blue;font-size:20px">Shortnening.... </p>
+<input id="copy_btn" type="button" value="COPY"  style="display: none;float : right">
 <script src="popup.js"></script>
 
 </body>
